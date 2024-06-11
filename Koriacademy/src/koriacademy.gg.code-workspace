@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "koriacademy.gg",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "koriacademy.gg"
+	}
+}

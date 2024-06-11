@@ -87,7 +87,7 @@ const App: React.FC = () => {
             <li><a href="https://www.tiktok.com/@koriacademy">TikTok</a></li>
           </ul>
         </nav>
-        <p>&copy; 2024 Simple Website. All rights reserved.</p>
+        <p>&copy; 2024 Koriacademy. All rights reserved.</p>
       </footer>
     </div>
   );
