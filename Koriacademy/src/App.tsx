@@ -36,15 +36,15 @@ const App: React.FC = () => {
   return (
   <div className="App">
     <header>
-      <nav>
-        <ul>
-          <li><a href="#about-us">About Us</a></li>
-          <li><a href="#contact-us">Contact Us</a></li>
-          <li><a href="#applications">Applications</a></li>
-        </ul>
-      </nav>
-      <img src={dummyImage} alt="Home" className="home-icon" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} />
-    </header>
+  <img src={dummyImage} alt="Home" className="home-icon" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} />
+  <nav>
+    <ul>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#contact-us">Contact Us</a></li>
+      <li><a href="#applications">Applications</a></li>
+    </ul>
+  </nav>
+</header>
     <div className="video-container">
       <video autoPlay loop muted className="background-video">
         <source src={video} type="video/mp4" />
