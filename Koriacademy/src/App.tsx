@@ -39,9 +39,9 @@ const App: React.FC = () => {
   <img src={Logo} alt="Home" className="home-icon" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} />
   <nav>
     <ul>
-      <li><a href="#about-us">About Us</a></li>
-      <li><a href="#contact-us">Contact Us</a></li>
-      <li><a href="#applications">Applications</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#partners">Partners</a></li>
+      <li><a href="#apply">Apply</a></li>
     </ul>
   </nav>
 </header>
@@ -82,7 +82,7 @@ const App: React.FC = () => {
             <li><a href="https://www.youtube.com/@KoriAcademy">YouTube</a></li>
             <li><a href="https://x.com/KoriAcademy">Twitter</a></li>
             <li><a href="https://www.instagram.com/koriacademygg/">Instagram</a></li>
-            <li><a href="https://koriacademy.gg/">Vefsiða</a></li>
+            <li><a href="https://koriacademy.gg/">Website</a></li>
             <li><a href="https://discord.gg/DcyaMHEhnt">Discord</a></li>
             <li><a href="https://www.tiktok.com/@koriacademy">TikTok</a></li>
           </ul>
