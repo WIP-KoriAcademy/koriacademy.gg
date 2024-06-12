@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import dummyImage from './dummy.jpg'; // Assuming you have the image in the src folder
+import Logo from './Kori_logo.png'; // Assuming you have the image in the src folder
 import video from './Placeholder.mp4'; // Import the video file
 
 const App: React.FC = () => {
@@ -36,7 +36,7 @@ const App: React.FC = () => {
   return (
   <div className="App">
     <header>
-  <img src={dummyImage} alt="Home" className="home-icon" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} />
+  <img src={Logo} alt="Home" className="home-icon" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} />
   <nav>
     <ul>
       <li><a href="#about-us">About Us</a></li>
