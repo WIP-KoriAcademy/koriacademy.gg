@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import Logo from './Kori_logo.png'; // Assuming you have the image in the src folder
-import video from './Wallpaper.mp4'; // Import the video file
+import Logo from './Kori_logo.png'; 
+import video from './Wallpaper.mp4';
+import Tiktok from './Tiktok.png'; 
+import Instagram from './Instagram.png'; 
+import Discord from './Discord.png'; 
+import Twitch from './Twitch.png'; 
+import Youtube from './Youtube.png'; 
+import X from './X.png'; 
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -22,7 +28,6 @@ const App: React.FC = () => {
     // Function to add animation to buttons on click
     document.querySelectorAll('footer ul li a').forEach(button => {
       button.addEventListener('click', function(e) {
-        e.preventDefault();
         const target = e.target as HTMLElement;
         target.classList.add('clicked');
 
@@ -34,23 +39,23 @@ const App: React.FC = () => {
   }, []);
 
   return (
-  <div className="App">
-    <header>
-  <img src={Logo} alt="Home" className="home-icon" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} />
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#partners">Partners</a></li>
-      <li><a href="#apply">Apply</a></li>
-    </ul>
-  </nav>
-</header>
-    <div className="video-container">
-      <video autoPlay loop muted className="background-video">
-        <source src={video} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
+    <div className="App">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#services">Partners</a></li>
+            <li><a href="#applications">Apply</a></li>
+          </ul>
+        </nav>
+        <img src={Logo} alt="Home" className="home-icon" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} />
+      </header>
+      <div className="video-container">
+        <video autoPlay loop muted className="background-video">
+          <source src={video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <main>
         <section id="home">
           <h1>Welcome to Our Website</h1>
@@ -78,13 +83,12 @@ const App: React.FC = () => {
       <footer>
         <nav>
           <ul>
-            <li><a href="https://www.twitch.tv/koriacademy">Twitch</a></li>
-            <li><a href="https://www.youtube.com/@KoriAcademy">YouTube</a></li>
-            <li><a href="https://x.com/KoriAcademy">Twitter</a></li>
-            <li><a href="https://www.instagram.com/koriacademygg/">Instagram</a></li>
-            <li><a href="https://koriacademy.gg/">Website</a></li>
-            <li><a href="https://discord.gg/DcyaMHEhnt">Discord</a></li>
-            <li><a href="https://www.tiktok.com/@koriacademy">TikTok</a></li>
+            <li><a href="https://www.twitch.tv/koriacademy" target="_blank" rel="noopener noreferrer"><img src={Twitch} alt="Twitch" className="footer-icon" /></a></li>
+            <li><a href="https://www.youtube.com/@KoriAcademy" target="_blank" rel="noopener noreferrer"><img src={Youtube} alt="YouTube" className="footer-icon" /></a></li>
+            <li><a href="https://x.com/KoriAcademy" target="_blank" rel="noopener noreferrer"><img src={X} alt="Twitter" className="footer-icon" /></a></li>
+            <li><a href="https://www.instagram.com/koriacademygg/" target="_blank" rel="noopener noreferrer"><img src={Instagram} alt="Instagram" className="footer-icon" /></a></li>
+            <li><a href="https://discord.gg/DcyaMHEhnt" target="_blank" rel="noopener noreferrer"><img src={Discord} alt="Discord" className="footer-icon" /></a></li>
+            <li><a href="https://www.tiktok.com/@koriacademy" target="_blank" rel="noopener noreferrer"><img src={Tiktok} alt="TikTok" className="footer-icon" /></a></li>
           </ul>
         </nav>
         <p>&copy; 2024 Koriacademy. All rights reserved.</p>
