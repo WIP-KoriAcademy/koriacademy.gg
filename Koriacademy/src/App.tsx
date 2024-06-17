@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import Logo from './Kori_logo.png'; // Assuming you have the image in the src folder
-import video from './Placeholder.mp4'; // Import the video file
+import video from './Wallpaper.mp4'; // Import the video file
 
 const App: React.FC = () => {
   useEffect(() => {
